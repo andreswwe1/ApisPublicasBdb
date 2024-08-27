@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite de pruebas haciendo un  CRUD " thread-count="1" parallel="tests">
+
+    <!-- ejecutar varias clases a la vez -->
+
+    <test name="consultar todos los objetos">
+        <classes>
+            <class name="ejecucionesManuales.ListOfAllObjects"> </class>
+        </classes>
+    </test>
+
+    <test name="consultar objetos por id">
+        <classes>
+            <class name="ejecucionesManuales.ListOfObjectsById"> </class>
+        </classes>
+    </test>
+
+    <test name="crear datos de un objeto">
+        <classes>
+            <class name="ejecucionesManuales.AddObject"> </class>
+        </classes>
+    </test>
+
+    <test name="consultar un objeto en especifico">
+        <classes>
+            <class name="ejecucionesManuales.SingleObject"> </class>
+        </classes>
+    </test>
+
+
+
+    <test name="actualizar Todo un objeto en especifico">
+        <classes>
+            <class name="ejecucionesManuales.UpdateObject"> </class>
+        </classes>
+    </test>
+
+    <test name="actualizar SOLO un dato de un objeto en especifico">
+        <classes>
+            <class name="ejecucionesManuales.PartiallyUpdateObject"> </class>
+        </classes>
+    </test>
+
+    <test name="Eliminar un objeto  en especifico por el ID">
+        <classes>
+            <class name="ejecucionesManuales.DeleteObject"> </class>
+        </classes>
+    </test>
+
+</suite>

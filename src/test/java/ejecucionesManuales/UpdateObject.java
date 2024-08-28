@@ -22,7 +22,7 @@ public class UpdateObject {
 
         Response response= actualizarRegistro
                 .when()
-                .put("/ff80818190910e080190945584c009f9");
+                .put("/ff80818190910e080190945584c009f9");//update id
         response.prettyPrint();
         int statusCode=response.getStatusCode();
         Assert.assertEquals(statusCode,200);

@@ -12,6 +12,7 @@ import static io.restassured.RestAssured.given;
 public class AddObject {
 @Test
     public void postAddObject(){
+
         File postBody =new File("src/main/resources/addObject.json");
 
         RequestSpecification AdicionarRegistros=given()
